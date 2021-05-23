@@ -1,0 +1,16 @@
+footer {
+    font-weight: bold;
+
+    ul {
+        
+        li:first-of-type {
+            font-size: $fontSize + 5;
+        }
+    }
+}
+
+.col-5 {
+    span {
+        color: $detailsColor;
+    }
+}

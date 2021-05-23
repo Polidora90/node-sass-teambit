@@ -1,0 +1,17 @@
+.google-btn-light {
+    @include buttons;
+
+    color: $btnColor;
+    padding: $spacing/3;
+}
+
+.dark-btn {
+    @include buttons;
+    background-color: $btnColor;
+    color: white;
+    padding: $spacing/4;
+
+    div {
+        @include btnLogoContainer;
+    }
+}

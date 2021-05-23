@@ -1,0 +1,21 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: $spacing/2;
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 0 ($spacing / 4);
+
+        div {
+            @include btnLogoContainer;
+        }
+    }
+
+   
+}
+
+

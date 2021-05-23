@@ -1,0 +1,10 @@
+@mixin buttons {
+    border: 1px solid $btnColor;
+    border-radius: $btnBorderRadius;
+}
+
+@mixin btnLogoContainer {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
