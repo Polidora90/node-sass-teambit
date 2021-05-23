@@ -1,10 +1,12 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    padding-bottom: $spacing/2;
+    align-items: center;
+    font-weight: bold;
 
     ul {
         display: flex;
+        align-items: baseline;
     }
 
     li {

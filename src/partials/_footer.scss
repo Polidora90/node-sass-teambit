@@ -1,16 +1,30 @@
 footer {
     font-weight: bold;
+    font-size: $smallFontSize + 2;
+    line-height: 20px;
 
     ul {
+        padding-right: $spacing;
         
         li:first-of-type {
-            font-size: $fontSize + 5;
+            font-size: $fontSize;
+            padding-bottom: $spacing;
         }
     }
+
+    .col-5 {
+        span {
+            color: $detailsColor;
+        }
+
+        .logo-container {
+            padding-bottom: $spacing;
+        }
+
+        p {
+            padding-right: $spacing*2;
+        }
+    }
+
 }
 
-.col-5 {
-    span {
-        color: $detailsColor;
-    }
-}

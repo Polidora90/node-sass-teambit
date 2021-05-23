@@ -65,6 +65,14 @@
   display: flex;
 }
 
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  padding: 20px 0;
+}
+
 ul {
   list-style-type: none;
 }
@@ -72,6 +80,14 @@ ul {
 a {
   text-decoration: none;
   color: #7f14d4;
+}
+a:hover {
+  color: #3e14e9;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #3e14e9;
 }
 
 body {
@@ -115,10 +131,12 @@ img {
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  align-items: center;
+  font-weight: bold;
 }
 .navbar-container ul {
   display: flex;
+  align-items: baseline;
 }
 .navbar-container li {
   padding: 0 5px;
@@ -129,24 +147,57 @@ img {
   vertical-align: middle;
 }
 
+.jumbotron h1, .jumbotron p {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.jumbotron a, .jumbotron span {
+  font-size: 10px;
+}
+.jumbotron .or {
+  padding-left: 3px;
+}
+.jumbotron .mail-address {
+  display: block;
+  padding-top: 20px;
+}
+
 .section1 {
   background-color: #0414b3;
+}
+.section1 h2 {
+  padding: 20px 120px;
 }
 .section1 .row {
   text-align: center;
 }
-.section1 .col-4 {
-  flex-basis: 10%;
-}
-.section1 .flex-container {
+.section1 .row .flex-container {
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 20px 0 60px 0;
 }
-.section1 .img-container-big {
+.section1 .row .flex-container .img-container-small {
+  height: 80px;
+}
+.section1 .row .flex-container .img-container-small img {
+  height: 100%;
+  width: auto;
+}
+.section1 .row .flex-container .img-container-big {
   flex-basis: 25%;
 }
+.section1 .row .flex-container p {
+  font-size: 10px;
+}
 
+.section2 .innested-row {
+  justify-content: flex-end;
+}
+.section2 p {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
 .section2 .img-container {
+  padding-top: 20px;
   max-width: 300px;
 }
 
@@ -173,6 +224,7 @@ img {
   display: inline-block;
   padding-right: 20px;
   max-width: 80px;
+  vertical-align: middle;
 }
 .section3 .panel p {
   padding-bottom: 20px;
@@ -180,14 +232,36 @@ img {
 .section3 .panel .names {
   color: #0e14ee;
 }
+.section3 .panel .founders {
+  display: inline-block;
+  vertical-align: middle;
+}
+.section3 .panel-btn {
+  padding: 60px 0;
+}
+.section3 .panel-btn p {
+  text-align: center;
+  padding-top: 20px;
+}
 
 footer {
   font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+}
+footer ul {
+  padding-right: 20px;
 }
 footer ul li:first-of-type {
-  font-size: 19px;
+  font-size: 14px;
+  padding-bottom: 20px;
 }
-
-.col-5 span {
+footer .col-5 span {
   color: #0e14ee;
+}
+footer .col-5 .logo-container {
+  padding-bottom: 20px;
+}
+footer .col-5 p {
+  padding-right: 40px;
 }

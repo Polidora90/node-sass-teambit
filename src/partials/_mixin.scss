@@ -8,3 +8,8 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+@mixin defaultTextStyle {
+    padding-bottom: $spacing;
+    font-weight: bold;
+}
